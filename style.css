@@ -54,3 +54,63 @@ footer{border-top:1px solid #151a1d}
 .trust-panel strong{display:block;font-size:14px;color:#e5ebed;margin-bottom:5px}
 .trust-panel p{margin:0;color:#788388;font-size:12px;line-height:1.5}
 @media(max-width:800px){.trust-panel{grid-template-columns:1fr;padding:15px}.trust-panel>div{padding:8px 4px}.project{min-height:240px}.project h3{font-size:22px}}
+
+
+/* LUXURY EDITION */
+:root{--lux:#d8b56a;--lux2:#f3dfad;--lux-dark:#8f6f31}
+body{background:#050505;color:#f4f0e7;font-family:Inter,Arial,Helvetica,sans-serif}
+header{background:rgba(5,5,5,.9);border-bottom:1px solid #29241a;box-shadow:0 8px 35px rgba(0,0,0,.22)}
+.brand{letter-spacing:4px}.brand span{color:var(--lux)}
+.logo-mark{color:#17130b;border-color:#8f6f31;background:linear-gradient(145deg,#f3dfad,#b8893f);box-shadow:0 0 28px rgba(216,181,106,.14)}
+.top-btn{border-color:#51452f;color:#ead9b2}
+nav a{color:#9b968c}nav a:hover{color:var(--lux2)}
+.hero{background:radial-gradient(circle at 78% 42%,rgba(216,181,106,.1),transparent 28%),radial-gradient(circle at 15% 20%,rgba(255,255,255,.035),transparent 25%)}
+.hero-badge{border-color:#594a2f;background:rgba(216,181,106,.06);color:#c5b083}
+.hero-badge::first-letter{color:var(--lux)}
+.eyebrow{color:#8d877b}
+.hero h1,.section h2,.contact h2{letter-spacing:-4px}
+.hero h1 em,.section h2 em,.contact h2 em{color:var(--lux2)}
+.hero p{color:#a8a39a}
+.btn.light{background:linear-gradient(135deg,#f1d99f,#c39a50);color:#171208;box-shadow:0 12px 38px rgba(216,181,106,.16)}
+.btn.light:hover{box-shadow:0 16px 45px rgba(216,181,106,.23)}
+.btn.outline{border-color:#4a4336;color:#e4ddcf}
+.trust span{color:#928c82}
+.hero-mini{border-left-color:var(--lux);color:#817b71}
+.hero-mini strong{color:#e4dccb}
+.globe{background:radial-gradient(circle at 40% 35%,#3a3324,#141310 45%,#050505 72%);box-shadow:0 0 130px rgba(216,181,106,.08)}
+.ring{border-color:#655435}.dot{background:var(--lux2);box-shadow:0 0 22px rgba(216,181,106,.75)}
+.stats{background:#080807;border-color:#27231c}.stats strong{color:#efe6d3}
+.section{border-bottom-color:#24211c}
+.cards article,.price-card{background:linear-gradient(145deg,#12110f,#080807);border-color:#2b2822;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.cards article:hover,.project:hover{border-color:#705d38;box-shadow:0 20px 55px rgba(0,0,0,.42)}
+.cards b{color:var(--lux)}
+.cards h3,.price-card h3{color:#f1ece2}
+.cards p,.price-card p{color:#8f8a80}
+.pricing-grid{gap:22px}
+.price-card{position:relative;overflow:hidden}
+.price-card.featured{border-color:#80683b;transform:translateY(-10px);box-shadow:0 25px 70px rgba(216,181,106,.1)}
+.price-card.featured:before{background:linear-gradient(135deg,#f3dfad,#b8893f);color:#171208}
+.price-card>span{color:#a29170}
+.price-card>strong{color:#f0dfb9}
+.price-card li{color:#aaa398}
+.project{background:linear-gradient(145deg,#242015,#090908);border-color:#302b21}
+.project:nth-child(2){background:linear-gradient(145deg,#171614,#29231a)}
+.project:nth-child(3){background:linear-gradient(145deg,#2a251b,#090908)}
+.project-top b{border-color:#655436;color:#c9b78e}
+.project span{color:#9d8e70}
+.project h3{color:#f0e9dc}
+.project p{color:#928d83}
+.trust-panel{border-color:#2b2822;background:linear-gradient(145deg,#11100e,#080807)}
+.trust-icon{border-color:#655436;color:var(--lux2);background:#17130b}
+.trust-panel strong{color:#eee7da}.trust-panel p{color:#817c74}
+.section-cta{background:linear-gradient(90deg,#120f09,#090908);border-color:#3a3020}
+input,select,textarea{background:#090908;border-color:#302c24;color:#f3eee4}
+input::placeholder,textarea::placeholder{color:#68645d}
+input:focus,select:focus,textarea:focus{border-color:#80683b;box-shadow:0 0 0 3px rgba(216,181,106,.06)}
+.contact{background:radial-gradient(circle at 80% 40%,rgba(216,181,106,.09),transparent 30%),#090908}
+.contact p{color:#928d84}
+.socials a{border-color:#342f26;color:#9f988b}.socials a:hover{border-color:#80683b;color:var(--lux2)}
+footer{border-top:1px solid #24211c;color:#716c63}
+footer span:last-child{color:#5f5a53}
+.section-cta strong{color:#eee6d8}
+@media(max-width:800px){.price-card.featured{transform:none}.hero h1,.section h2,.contact h2{letter-spacing:-2px}}
