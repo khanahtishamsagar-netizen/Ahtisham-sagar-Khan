@@ -94,6 +94,7 @@
   <div class="eyebrow">START YOUR PROJECT</div>
   <h2>Tell us about your <em>business.</em></h2>
   <p class="intro-text">Fill in the details below. We’ll use your information to prepare your website project.</p>
+  <div class="quick-order"><strong>Ready to start your website?</strong><p>Send your business details on WhatsApp. I will contact you with the next steps.</p><a class="btn light" href="https://wa.me/923185005177?text=Hello%20Ahtisham%20Digital%20Services%2C%20I%20want%20to%20order%20a%20website.%20Please%20contact%20me.">Order on WhatsApp ↗</a></div>
   <form class="project-form" action="mailto:KHANAHTISHAMSAGAR@GMAIL.COM" method="post" enctype="text/plain">
     <div class="form-grid">
       <label>Business Name<input name="Business Name" required placeholder="e.g. ABC Restaurant"></label>
@@ -124,3 +125,20 @@
 <script src="script.js"></script>
 </body>
 </html>
+<style>
+/* CUSTOMER ORDER CTA */
+.quick-order{margin-top:35px;padding:22px;border:1px solid #6f5930;border-radius:18px;background:linear-gradient(135deg,rgba(232,199,120,.09),rgba(0,0,0,.15));box-shadow:0 18px 50px rgba(0,0,0,.25)}
+.quick-order strong{display:block;color:#f0dfb5;font-size:18px;margin-bottom:7px}.quick-order p{margin:0 0 16px;color:#8f897d;font-size:13px;line-height:1.6}.quick-order .btn{margin-top:0}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+ const form=document.querySelector('.project-form');
+ if(!form)return;
+ form.addEventListener('submit',function(e){
+  e.preventDefault();
+  const data=new FormData(form);
+  const lines=['New Website Customer Inquiry','Business: '+(data.get('Business Name')||''),'Type: '+(data.get('Business Type')||''),'WhatsApp: '+(data.get('Phone / WhatsApp')||''),'Email: '+(data.get('Customer Email')||''),'City: '+(data.get('City / Address')||''),'Package: '+(data.get('Package')||''),'Services: '+(data.get('Services / Products')||''),'Style: '+(data.get('Style / Colors')||''),'Requirements: '+(data.get('Extra Requirements')||'')];
+  window.open('https://wa.me/923185005177?text='+encodeURIComponent(lines.join('\n')),'_blank');
+ });
+});
+</script>
