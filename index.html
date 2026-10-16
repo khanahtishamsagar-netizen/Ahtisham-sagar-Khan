@@ -95,7 +95,7 @@
   <h2>Tell us about your <em>business.</em></h2>
   <p class="intro-text">Fill in the details below. We’ll use your information to prepare your website project.</p>
   <div class="quick-order"><strong>Ready to start your website?</strong><p>Send your business details on WhatsApp. I will contact you with the next steps.</p><a class="btn light" href="https://wa.me/923185005177?text=Hello%20Ahtisham%20Digital%20Services%2C%20I%20want%20to%20order%20a%20website.%20Please%20contact%20me.">Order on WhatsApp ↗</a></div>
-  <form class="project-form" action="mailto:KHANAHTISHAMSAGAR@GMAIL.COM" method="post" enctype="text/plain">
+  <form class="project-form" action="#" method="post" enctype="text/plain">
     <div class="form-grid">
       <label>Business Name<input name="Business Name" required placeholder="e.g. ABC Restaurant"></label>
       <label>Business Type<input name="Business Type" required placeholder="e.g. Restaurant, Salon, Shop"></label>
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded',function(){
   e.preventDefault();
   const data=new FormData(form);
   const lines=['New Website Customer Inquiry','Business: '+(data.get('Business Name')||''),'Type: '+(data.get('Business Type')||''),'WhatsApp: '+(data.get('Phone / WhatsApp')||''),'Email: '+(data.get('Customer Email')||''),'City: '+(data.get('City / Address')||''),'Package: '+(data.get('Package')||''),'Services: '+(data.get('Services / Products')||''),'Style: '+(data.get('Style / Colors')||''),'Requirements: '+(data.get('Extra Requirements')||'')];
-  window.open('https://wa.me/923185005177?text='+encodeURIComponent(lines.join('\n')),'_blank');
+  window.location.href='https://wa.me/923185005177?text='+encodeURIComponent(lines.join('\n'));
  });
 });
 </script>
